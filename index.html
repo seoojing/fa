@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>재방문</title>
+<title>앞</title>
 <style>
 @font-face {
       font-family: "DungGeunMo";
@@ -106,8 +106,8 @@ a2:hover{ color: white;
 
 	#noo{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 55%;font-family: "DungGeunMo";cursor: pointer;z-index: 10;}
 	#noo:hover{color: white; }
-	#foo{bottom: 16%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none; animation: tong 2s infinite;}
-		#foo img{height: 20px;width: auto; }
+	#foo{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#foo img{height: 50px;width: auto;  }
 
 	#poom{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
 	#poom2{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
@@ -182,8 +182,6 @@ a2:hover{ color: white;
 		#koooooo img{height: 50px;width: auto; }	
 	#kooooooo{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
 		#kooooooo img{height: 50px;width: auto; }	
-	#kii{bottom: 15%; right: 25%;z-index: 999; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
-		#kii img{height: 50px;width: auto;  }
 
 	#next{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
 		#next img{height: 50px;width: auto; }
@@ -259,6 +257,8 @@ a2:hover{ color: white;
 		#next33 img{height: 50px;width: auto;  }
 	#next34{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
 		#next34 img{height: 50px;width: auto;  }
+	#kii{bottom: 15%; right: 25%;z-index: 999; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#kii img{height: 50px;width: auto;  }
 
 	#soun { position: absolute; z-index: 99;cursor: pointer;bottom: 80%; right: 54%;  display: none;}
 	#soun img{ position: absolute; width: 50px; height:50px; z-index: 101;cursor: pointer;}
@@ -326,6 +326,7 @@ a5 {
 			50%{top: 55%;}
 			100%{top: 54%;}
 		}	
+
 
 /*카드*/
 
@@ -576,7 +577,7 @@ a5 {
 
 /* Parent Container */
 /* 교수님 사무실 */
-#saw{
+#saw{display: none;
 position: absolute;
  width:90px;
  height: 620px;
@@ -663,7 +664,7 @@ bottom:20%; left: -65%;
 
 
 /* 교수님 사무실 */
-#see{ 
+#see{ display: none;
 position: absolute;
  width:50px;
  height: 600px;
@@ -707,7 +708,7 @@ bottom:50%; left: -105%;
 
 
 /* 교수님 사무실 */
-#see2{
+#see2{ display: none;
 position: absolute;
  width:50px;
  height: 400px;
@@ -1070,10 +1071,12 @@ a4 { font-weight:bold;
 	<div id="logo">
 		<img src="logo.png">
 	</div>
+<a href="https://seoojing.github.io/menu/">
 
 	<div id="book">
 		<img src="book3.png">
 	</div>
+</a>	
 	<div id="map">
 		<img src="map.png">
 	</div>
@@ -1103,6 +1106,9 @@ a4 { font-weight:bold;
 	<div id="mimi">
 		<img src="mimi.png">
 	</div>
+	<audio id="beep">
+		<source src="beep.mp3" type="audio/mpeg">
+	</audio>
 
 
 <audio id="walkk">
@@ -1127,11 +1133,11 @@ a4 { font-weight:bold;
 	</div>
 
 <!--방향 -->
-
+<a href="https://seoojing.github.io/oi/">
 	<div id="turn">
 		<img src="turn.png">
 	</div>
-
+</a>
 
 <!--설명글 -->
 
@@ -1144,7 +1150,11 @@ a4 { font-weight:bold;
 
 
 
-
+<!-- Image 1 -->
+<div id="content_imgd"style="cursor: url(hand.png), pointer;">
+ <img src='blank.png' width='100%' height='100%'style="cursor: url(hand.png), pointer;">
+ <div>"귀찮음의 칸 입니다."</div>
+</div>
 <!-- 두번째칸 -->
 <div id="see"style="cursor: url(hand.png), pointer;">
  <img src='blank.png' width='100%' height='100%'style="cursor: url(hand.png), pointer;">
@@ -1192,9 +1202,7 @@ a4 { font-weight:bold;
 	 <h6 id="poom10">"질투의 칸 입니다."</h6>
 	 <h6 id="poom11">(뭔가 점점 귀찮아 하는 것 같다.)</h6>
 	 <h6 id="poom12"style="color: #531616;">"내가 힌트 그 자체인데 왜 힌트를 원해?"</h6>
-	<div id="kii">
-		<img src="won.png">
-	</div>
+
 
 	 <h6 id="jungg1">안녕! 이번엔 일찍왔네? 뭐 이번에도 힌트가 필요하니까 왔겠지?</h6>	 
 		 <h6 id="jungg2">이번엔 작은 이벤트를 준비했어. 나도 힌트 막 주면 손해니까.</h6>	 
@@ -1507,7 +1515,9 @@ a4 { font-weight:bold;
 	<div id="next34">
 		<img src="won.png">
 	</div>
-
+	<div id="kii">
+		<img src="won.png">
+	</div>
 
 
 
@@ -1614,6 +1624,196 @@ window.onmousemove = function(){
 			   
 	}
 } 
+	kii.onclick = function(){
+		but.play();
+		poom12.style.display = "none"
+		kii.style.display = "none"
+		bx2.style.display = "none"
+			}
+	content_imgd.onclick = function(){
+		door.play();
+		bx.style.display = "inline"
+		poom.style.display = "inline"
+		oo.style.display = "inline"
+		content_imgd.style.display = "none"
+
+			}
+	oo.onclick = function(){
+		but.play();
+		poom.style.display = "none"
+		poom2.style.display = "inline"
+		oo.style.display = "none"
+		ooo.style.display = "inline"
+			}
+	ooo.onclick = function(){
+		but.play();
+		poom2.style.display = "none"
+			poom3.style.display = "inline"
+		ooo.style.display = "none"
+			oooo.style.display = "inline"
+			}			
+	oooo.onclick = function(){
+		but.play();
+		poom3.style.display = "none"
+			jungg1.style.display = "inline"
+			ooooo.style.display = "inline"
+			nn.style.display = "inline"
+			face4.style.display = "inline"
+		oooo.style.display = "none"
+			}
+
+	ooooo.onclick = function(){
+		but.play();
+		ooooo.style.display = "none"
+		jungg1.style.display = "none"
+		ch.style.display = "inline"
+		choose.style.display = "inline"
+		jungg2.style.display = "inline"
+
+			}
+				choose.onclick = function(){
+		but.play();
+		jungg2.style.display = "none"
+		ch.style.display = "none"
+		jungg3.style.display = "inline"
+		choose.style.display = "none"
+		next.style.display = "inline"
+			}
+	ch.onclick = function(){
+		but.play();
+		jungg2.style.display = "none"
+		ch.style.display = "none"
+		jungg3.style.display = "inline"
+		choose.style.display = "none"
+		next.style.display = "inline"
+			}
+	next.onclick = function(){
+		but.play();
+		jungg3.style.display = "none"
+		jungg4.style.display = "inline"
+		next.style.display = "none"
+		next2.style.display = "inline"
+			face4.style.display = "none"
+			face2.style.display = "inline"
+			}
+
+	soun11.onclick = function(){
+		beep.play();}	
+	next2.onclick = function(){
+		but.play();
+		jungg4.style.display = "none"
+		jungg5.style.display = "inline"
+		next2.style.display = "none"
+		next3.style.display = "inline"
+			face2.style.display = "none"
+			face4.style.display = "inline"
+			}
+	next3.onclick = function(){
+		but.play();
+		jungg5.style.display = "none"
+		jungg6.style.display = "inline"
+		next3.style.display = "none"
+		next4.style.display = "inline"
+			}
+	next4.onclick = function(){
+		but.play();
+		jungg6.style.display = "none"
+		jungg7.style.display = "inline"
+		next4.style.display = "none"
+		next5.style.display = "inline"
+			face4.style.display = "none"
+			face2.style.display = "inline"		
+			}
+	next5.onclick = function(){
+		but.play();
+		jungg7.style.display = "none"
+		jungg8.style.display = "inline"
+		next5.style.display = "none"
+		next6.style.display = "inline"
+			}
+	next6.onclick = function(){
+		but.play();
+		jungg8.style.display = "none"
+		jungg9.style.display = "inline"
+		next6.style.display = "none"
+		next7.style.display = "inline"
+			face2.style.display = "none"
+			face4.style.display = "inline"		
+			}
+	next7.onclick = function(){
+		but.play();
+		jungg9.style.display = "none"
+		jungg10.style.display = "inline"
+		next7.style.display = "none"
+		next8.style.display = "inline"
+			}
+	next8.onclick = function(){
+		but.play();
+		jungg10.style.display = "none"
+		jungg11.style.display = "inline"
+		next8.style.display = "none"
+		next9.style.display = "inline"
+			face4.style.display = "none"
+			face1.style.display = "inline"		
+			}
+	next9.onclick = function(){
+		but.play();
+		jungg11.style.display = "none"
+		jungg12.style.display = "inline"
+		next9.style.display = "none"
+		next10.style.display = "inline"
+			}
+	next10.onclick = function(){
+		but.play();
+		jungg12.style.display = "none"
+		jungg13.style.display = "inline"
+		next10.style.display = "none"
+		next11.style.display = "inline"
+			}
+	next11.onclick = function(){
+		but.play();
+		jungg13.style.display = "none"
+		jungg14.style.display = "inline"
+		next11.style.display = "none"
+		next12.style.display = "inline"
+			face1.style.display = "none"
+			face3.style.display = "inline"		
+			}
+	next12.onclick = function(){
+		but.play();
+		jungg14.style.display = "none"
+		jungg15.style.display = "inline"
+		next12.style.display = "none"
+		next13.style.display = "inline"
+			}
+	next13.onclick = function(){
+		but.play();
+		jungg15.style.display = "none"
+		jungg16.style.display = "inline"
+		next13.style.display = "none"
+		next14.style.display = "inline"
+			face3.style.display = "none"
+			face4.style.display = "inline"		
+			}
+	next14.onclick = function(){
+		but.play();
+		jungg16.style.display = "none"
+		poom5.style.display = "inline"
+		nn.style.display = "none"
+		face4.style.display = "none"
+		next14.style.display = "none"
+		next15.style.display = "inline"
+			}
+	next15.onclick = function(){
+		yap.play();
+		poom5.style.display = "none"
+		bx.style.display = "none"
+		next15.style.display = "none"
+		see.style.display = "inline"
+		see2.style.display = "inline"
+		saw.style.display = "inline"
+			}
+
 
 /* 두번째 칸 */
 	see.onclick = function(){
@@ -2320,15 +2520,9 @@ window.onmousemove = function(){
 			soun11.style.display = "inline";
 		on = false;}
 
-	kii.onclick = function(){
-		but.play();
-		poom12.style.display = "none"
-		kii.style.display = "none"
-		bx2.style.display = "none"
-			}
+
 	yaa3.onclick = function(){
 		but.play();
-
 
 			poom12.style.display = "inline"
 			kii.style.display = "inline"
@@ -2340,7 +2534,7 @@ window.onmousemove = function(){
 	yaa.onclick = function(){
 		door.play();
 
-
+		
 			poom12.style.display = "inline"
 			kii.style.display = "inline"
 			hinttxt.style.display = "none";
